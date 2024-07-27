@@ -1,0 +1,28 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+def build(ctx):
+
+    lc_inc_dir = ctx.path.parent.find_dir('latcommon/include')
+    lm_inc_dir = ctx.path.parent.find_dir('include')
+
+    for src, tgt in [('SeekMain.cc', 'seek'), ('LatMain.cc', 'lat')]:
+        ctx(features='cxx cxxprogram',
+                source=ctx.path.find_node(src),
+                includes=[lm_inc_dir, lc_inc_dir],
+                lib=ctx.env.LIB_NTL + ctx.env.LIB_TESTU01 + ctx.env.LIB_GMP + ctx.env.LIB_MYLIB,
+                stlib=ctx.env.STLIB_NTL + ctx.env.STLIB_TESTU01 + ctx.env.STLIB_GMP + ctx.env.STLIB_MYLIB,
+                target=(tgt + ctx.env.LATCOMMON_SUFFIX),
+                use=['latmrg' + ctx.env.LATCOMMON_SUFFIX, 'latcommon' + ctx.env.LATCOMMON_SUFFIX],
+                install_path='${BINDIR}')
+
+    if ctx.env.LATCOMMON_SUFFIX == 'ZZDD':
+        for src, tgt in [('MaxPeriod.cc', 'maxper'), ('FindMK.cc', 'findmk'), ('FindMK2.cc', 'findmk2')]:
+            ctx(features='cxx cxxprogram',
+                    source=ctx.path.find_node(src),
+                    includes=[lm_inc_dir, lc_inc_dir],
+                    lib=ctx.env.LIB_NTL + ctx.env.LIB_TESTU01 + ctx.env.LIB_GMP + ctx.env.LIB_MYLIB,
+                    stlib=ctx.env.STLIB_NTL + ctx.env.STLIB_TESTU01 + ctx.env.STLIB_GMP + ctx.env.STLIB_MYLIB,
+                    target=tgt,
+                    use=['latmrgZZDD', 'latcommonZZDD'],
+                    install_path='${BINDIR}')
