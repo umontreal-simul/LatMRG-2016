@@ -1,0 +1,31 @@
+# project  configured on Wed Apr 12 13:51:32 2017 by
+# waf 1.8.20 (abi 98, python 30500f0 on win32)
+# using waf configure --out .
+#
+----------------------------------------
+Setting top to
+C:\Users\Lecuyer\Documents\random\latmrg\latmrg
+----------------------------------------
+Setting out to
+C:\Users\Lecuyer\Documents\random\latmrg\latmrg
+----------------------------------------
+Build platform
+win32
+----------------------------------------
+Use NTL
+no
+----------------------------------------
+Checking for 'msvc' (C compiler)
+from C:\Users\Lecuyer\Documents\random\latmrg\latmrg\latcommon: msvc: Impossible to find a valid architecture for building (in setup_msvc)
+not found
+----------------------------------------
+Checking for 'gcc' (C compiler)
+find program=['gcc', 'cc'] paths=['C:\\ProgramData\\Oracle\\Java\\javapath', 'C:\\Program Files (x86)\\Intel\\iCLS Client\\', 'C:\\Program Files\\Intel\\iCLS Client\\', 'C:\\WINDOWS\\system32', 'C:\\WINDOWS', 'C:\\WINDOWS\\System32\\Wbem', 'C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\', 'C:\\Program Files\\Lenovo\\Fingerprint Manager Pro\\', 'C:\\Program Files (x86)\\Common Files\\Lenovo', 'C:\\SWTOOLS\\ReadyApps', 'C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin', 'C:\\Program Files (x86)\\Lenovo\\Access Connections\\', 'C:\\Program Files\\Java\\ssj\\lib', 'C:\\Program Files\\Java\\jdk1.8.0_45\\bin', 'C:\\Program Files (x86)\\Skype\\Phone\\', 'C:\\Program Files\\doxygen\\bin', 'C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL', 'C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL', 'C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT', 'C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT', 'C:\\Program Files\\Intel\\WiFi\\bin\\', 'C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\', 'C:\\Users\\Lecuyer\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\', 'C:\\Users\\Lecuyer\\AppData\\Local\\Programs\\Python\\Python35\\', 'C:\\Program Files\\miktex\\miktex\\bin\\', 'C:\\Program Files\\Java\\ssj\\lib', 'C:\\Program Files\\Java\\jdk1.8.0_45\\bin', 'C:\\Users\\Lecuyer\\Documents\\bat', 'C:\\Users\\Lecuyer\\AppData\\Local\\Microsoft\\WindowsApps', 'C:\\Program Files\\Intel\\WiFi\\bin\\', 'C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\'] var='CC' -> None
+from C:\Users\Lecuyer\Documents\random\latmrg\latmrg\latcommon: Could not find the program ['gcc', 'cc']
+not found
+----------------------------------------
+Checking for 'clang' (C compiler)
+find program=['clang'] paths=['C:\\ProgramData\\Oracle\\Java\\javapath', 'C:\\Program Files (x86)\\Intel\\iCLS Client\\', 'C:\\Program Files\\Intel\\iCLS Client\\', 'C:\\WINDOWS\\system32', 'C:\\WINDOWS', 'C:\\WINDOWS\\System32\\Wbem', 'C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\', 'C:\\Program Files\\Lenovo\\Fingerprint Manager Pro\\', 'C:\\Program Files (x86)\\Common Files\\Lenovo', 'C:\\SWTOOLS\\ReadyApps', 'C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin', 'C:\\Program Files (x86)\\Lenovo\\Access Connections\\', 'C:\\Program Files\\Java\\ssj\\lib', 'C:\\Program Files\\Java\\jdk1.8.0_45\\bin', 'C:\\Program Files (x86)\\Skype\\Phone\\', 'C:\\Program Files\\doxygen\\bin', 'C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL', 'C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL', 'C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT', 'C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT', 'C:\\Program Files\\Intel\\WiFi\\bin\\', 'C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\', 'C:\\Users\\Lecuyer\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\', 'C:\\Users\\Lecuyer\\AppData\\Local\\Programs\\Python\\Python35\\', 'C:\\Program Files\\miktex\\miktex\\bin\\', 'C:\\Program Files\\Java\\ssj\\lib', 'C:\\Program Files\\Java\\jdk1.8.0_45\\bin', 'C:\\Users\\Lecuyer\\Documents\\bat', 'C:\\Users\\Lecuyer\\AppData\\Local\\Microsoft\\WindowsApps', 'C:\\Program Files\\Intel\\WiFi\\bin\\', 'C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\'] var='CC' -> None
+from C:\Users\Lecuyer\Documents\random\latmrg\latmrg\latcommon: Could not find the program ['clang']
+not found
+from C:\Users\Lecuyer\Documents\random\latmrg\latmrg\latcommon: could not configure a C compiler!

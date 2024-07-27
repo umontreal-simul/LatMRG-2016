@@ -1,0 +1,12 @@
+The `bin.old` directory contains the executable programs that David obtained by
+compiling the last *stable* version of LatMRG that Richard left (now in
+`/u/simul/archives/latmrg/stable`.
+
+The `bin.new` directory contains the executable programs that David obtained by
+compiling the initial commit of LatMRG in `/u/simul/git/latmrg.git`.
+
+The script `compare.zsh` runs the programs in `bin.old` and in `bin.new` on the
+inputs in `inputs` and stores their outputs in `out/old` and `out/new`,
+respectively.  A recursive *diff/merge* program, such as
+(Meld)[http://meldmerge.org/] can be used to compare the outputs.  This can
+serve as high-level regression testing.
